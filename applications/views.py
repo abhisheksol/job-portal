@@ -7,6 +7,7 @@ from jobs.models import Job
 from .serializers import ApplicationStatusUpdateSerializer
 from .tasks import send_application_status_email
 import logging
+from rest_framework import status as drf_status
 
 
 logger = logging.getLogger(__name__)
